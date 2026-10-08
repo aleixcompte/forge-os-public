@@ -1,23 +1,55 @@
-# Public Examples
+# Safe Public Engineering Examples
 
-This directory is reserved for safe, public examples of FORGE patterns.
+The examples in this repository intentionally demonstrate **patterns**, not production implementation.
 
-Examples published here must contain no:
+## Example: governed action envelope
 
-- secrets
-- customer data
-- production endpoints
-- private infrastructure identifiers
-- proprietary source code
-- reusable credentials
+```json
+{
+  "goal_id": "goal-example",
+  "actor": {
+    "type": "agent",
+    "id": "agent-example"
+  },
+  "requested_action": "tool.example.execute",
+  "authority": {
+    "scope": "example-resource"
+  },
+  "policy_result": "allow",
+  "requires_human_approval": false
+}
+```
 
-Planned example categories:
+This illustrates the separation between the actor, requested capability, authority and policy result.
 
-1. Governed tool invocation
-2. Human approval gate
-3. Evidence record
-4. Durable checkpoint
-5. Agent delegation envelope
-6. Model/tool eligibility decision
+## Example: gated action
 
-The examples will demonstrate contracts and patterns rather than expose the private production implementation.
+```text
+Goal
+  ↓
+Policy evaluation
+  ↓
+Risk threshold reached
+  ↓
+GATE
+  ↓
+Human approval required
+  ↓
+Resume only after explicit decision
+```
+
+## Example: evidence chain
+
+```json
+{
+  "execution_id": "exec-example",
+  "status": "verified",
+  "evidence": [
+    "test-result",
+    "runtime-observation"
+  ],
+  "checkpoint": "checkpoint-example"
+}
+```
+
+These examples are intentionally generic. They reveal the engineering model without exposing production schemas, identifiers, policies or implementation.
