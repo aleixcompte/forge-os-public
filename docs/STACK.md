@@ -1,79 +1,19 @@
-# Technology Stack
+# Public Technology Stack
 
-This is a public capability view, not a production inventory.
+A selected view of tools used in FORGE OS and adjacent integration projects; this is not a production inventory.
 
-## Languages and runtime
+**AI and development:** OpenAI API, Codex, Claude, LLM APIs
 
-- Python
-- TypeScript
-- JavaScript / Node.js
-- SQL
-- Bash / Linux shell
+**Languages and backend:** Python, TypeScript, JavaScript, Node.js, SQL, REST APIs, JSON, webhooks
 
-## AI engineering
+**Data:** PostgreSQL
 
-- OpenAI APIs
-- Codex-assisted engineering
-- LLM tool calling
-- structured outputs
-- model routing
-- agent runtime patterns
-- evaluation workflows
-- human-in-the-loop orchestration
+**Infrastructure:** Linux, Ubuntu, Hetzner Cloud VPS, Docker, Docker Swarm, Traefik, SSH
 
-## Backend and data
+**Engineering:** Git, GitHub, GHCR, testing
 
-- PostgreSQL
-- REST APIs
-- JSON contracts
-- webhooks
-- durable state
-- migrations
-- transactional workflows
-- service-oriented boundaries
+**Automation and integrations:** n8n, Make, Airtable, Evolution API, WhatsApp, Chatwoot, MailerLite, Tally
 
-## Infrastructure
+**Collaboration:** Notion, Google Drive, Zoom, Canva, Inrō
 
-- Linux / Ubuntu
-- Docker
-- containerized execution
-- Git
-- GitHub
-- CI/CD patterns
-- SSH
-- reverse proxies
-- VPS infrastructure
-
-## Automation and integrations
-
-- n8n
-- Make
-- Airtable
-- external APIs
-- webhooks
-- workflow automation
-
-## Governance engineering
-
-- identity
-- authority
-- policy
-- approvals
-- evidence
-- audit
-- checkpoints
-- model registries
-- tool registries
-- least privilege
-- rollback
-- verification
-
-## Engineering practices
-
-- inspect before build
-- minimal verified changes
-- branch and review workflows
-- tests before status claims
-- explicit deployment gates
-- evidence-based verification
-- durable checkpoints
+Technology mentions describe experience and do not reveal deployment composition, versions, network layout, settings or system architecture.
